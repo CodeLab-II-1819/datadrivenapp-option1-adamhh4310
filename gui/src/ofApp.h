@@ -9,6 +9,7 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 
+		ofTrueTypeFont mainFont;
 	
 		
 };
