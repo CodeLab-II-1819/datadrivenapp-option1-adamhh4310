@@ -4,7 +4,7 @@
 void ofApp::setup(){
 
 	//loading font 
-	mainFont.load("CFNightmarePERSONAL-Regular.ttf", 60);
+	mainFont.load("Dirty Brush.ttf", 20);
 
 }
 
@@ -20,40 +20,70 @@ void ofApp::draw(){
 	//ofSetColor(red, green, blue); rgb
 	ofSetColor(192, 192, 192);
 	ofDrawBitmapString(" Twitter Query App", (ofGetWidth()/2)-50, 30);
+//-------------------------------------------------------------------------------
+	// Option 1 Button
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 100, 150, 50);
+
+	// Opion 2 Button
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 175, 150, 50);
 
 	
-	ofSetColor(200, 10, 20);
-	// static button 
-	ofDrawRectangle(50, 100, 125, 50);
+	// Option 3 Button
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 250, 150, 50);
 
-	// static button 
-	ofDrawRectangle(50, 175, 125, 50);
+	// Option 4 button 
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 325, 150, 50);
 
-	ofSetColor(10, 200, 20);
-	// static button 
-	ofDrawRectangle(50, 250, 125, 50);
+	// Option 5 button 
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 400, 150, 50);
 
+	// Option 6 button 
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 475, 150, 50);
+
+	// Option 7 button 
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 550, 150, 50);
+
+	// Option 8 button 
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 625, 150, 50);
+
+	// Option  9 button 
+	ofSetColor(94, 157, 63);
+	ofDrawRectangle(50, 700, 150, 50);
+
+	// Center console 
 	ofSetColor(192, 192, 192);
-	//drawing the font 
-	ofDrawRectangle(50, 325, 125, 50);
+	ofDrawRectangle(360, 100, 1400, 650);
+
+//----------------------------------------------------------------------------
+
+	// Setting the font colour 
+	ofSetColor(236, 239, 179);
 	// Option 1 
-	ofDrawBitmapString(" Select for all Tweets", 55 , 125 );
+	mainFont.drawString(" All Tweets", 55 , 135 );
 	// Option 2 
-	ofDrawBitmapString(" Paris " , 
+	mainFont.drawString(" Paris ", 55 , 210);
 	// Option 3 
-	ofDrawBitmapString(" Money"),
+	mainFont.drawString(" Money" , 55 , 285);
 	// Option 4 
-	ofDrawBitmapString(" Politics",
+	mainFont.drawString(" Politics", 55, 360);
 	// Option 5
-	ofDrawBitmapString("Uber",
+	mainFont.drawString("Uber", 55, 435);
 	//  Option 6
-	ofDrawBitmapString(" Dream Works",
+	mainFont.drawString(" Dream Works", 55, 510);
 	// Option 7
-	ofDrawBitmapString(" Fruit",
+	mainFont.drawString(" Fruit", 55, 585);
 	// Option 8
-	ofDrawBitMapString("Brexit",
+	mainFont.drawString("Brexit", 55, 660);
 	// Oppion 9
-	ofDrawBitMapString()
+	mainFont.drawString("Travel",55, 735);
 	
 
 }
