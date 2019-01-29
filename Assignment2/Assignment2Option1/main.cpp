@@ -216,10 +216,11 @@ int main()
 			while (!inTwitterFile.eof())
 			{
 				getline(inTwitterFile, twitterData);
-				if (twitterData.find("Currency") <= twitterData.length())
+				if (twitterData.find("Dog") <= twitterData.length())
 				{
 
 					cout << twitterData << endl;
+					cout << " -----------" << endl;
 				}
 			}
 
